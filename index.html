@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>💜 JazWeb | Página Personal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff5fb;
+            color: #333;
+        }
+
+        /* MENÚ */
+        nav {
+            background: linear-gradient(90deg, #6a1b9a, #d81b8c);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd6f5;
+        }
+
+        /* INICIO */
+        .inicio {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+
+            background: linear-gradient(
+                135deg,
+                #6a1b9a,
+                #9c27b0,
+                #e91e63
+            );
+        }
+
+        .inicio h1 {
+            font-size: 60px;
+            color: white;
+            animation: aparecer 1.5s ease;
+        }
+
+        .inicio p {
+            color: white;
+            font-size: 21px;
+            margin: 20px;
+        }
+
+        /* BOTÓN */
+        .boton {
+            background: white;
+            color: #8e24aa;
+            padding: 15px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            transform: scale(1.1);
+            background: #ffe4f5;
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 70px 30px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #8e24aa;
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* SOBRE MÍ */
+        .sobre {
+            background: white;
+        }
+
+        .sobre p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* FOTO */
+        .foto {
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #d81b8c;
+            margin: 20px;
+            box-shadow: 0 5px 25px #0003;
+            transition: 0.4s;
+        }
+
+        .foto:hover {
+            transform: scale(1.08) rotate(2deg);
+        }
+
+        /* REDES */
+        .redes {
+            background: #fce4ec;
+        }
+
+        .redes p {
+            font-size: 18px;
+        }
+
+        .redes a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            border-radius: 25px;
+            background: #8e24aa;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .redes a:hover {
+            transform: translateY(-7px);
+            background: #d81b8c;
+            box-shadow: 0 5px 15px #0003;
+        }
+
+        /* ANIMACIÓN */
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            background: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* CELULAR */
+        @media (max-width: 600px) {
+
+            .inicio h1 {
+                font-size: 42px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .foto {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#redes">Redes sociales</a>
+    </nav>
+
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+
+        <h1>💜 JazWeb</h1>
+
+        <p>Mi espacio personal en Internet ✨</p>
+
+        <a href="#sobre" class="boton">
+            Conóceme
+        </a>
+
+    </section>
+
+
+    <!-- SOBRE MÍ -->
+    <section class="sobre" id="sobre">
+
+        <h2>🌸 Sobre mí</h2>
+
+        <img
+            src="jazmin.jpg"
+            alt="Foto de Jazmín"
+            class="foto"
+        >
+
+        <p>
+            ¡Hola! Soy Jazmín 💜.
+            Bienvenidos a mi página web personal.
+            Aquí podrás conocer un poco más sobre mí,
+            mis intereses y mis redes sociales.
+        </p>
+
+    </section>
+
+
+    <!-- REDES SOCIALES -->
+    <section class="redes" id="redes">
+
+        <h2>📱 Mis redes sociales</h2>
+
+        <p>
+            Sígueme en mis redes sociales ✨
+        </p>
+
+        <br>
+
+        <!-- INSTAGRAM -->
+        <a href="https://www.instagram.com/jaz_andrea"
+           target="_blank">
+            📸 Instagram
+        </a>
+
+        <!-- TIKTOK -->
+        <a href="https://www.tiktok.com/@jaz_andreag"
+           target="_blank">
+            🎵 TikTok
+        </a>
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.link/y82bon"
+           target="_blank">
+            💬 WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            © 2026 JazWeb 💜 | Página personal
+        </p>
+
+    </footer>
+
+</body>
+</html>
